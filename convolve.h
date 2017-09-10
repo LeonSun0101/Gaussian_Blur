@@ -31,9 +31,9 @@ Mat convolve(Mat image, Mat kernel)
   	int l = (kernel.rows- 1)/2;
   	int u =0;
   	int v =0;
-  	for(int x = 0; x<r ; x++)
+  	for(int x = l; x<r-l ; x++)
   	{
-  		for(int y = 0; y<c ; y++)
+  		for(int y = l; y<c-l ; y++)
   		{
   			int val = 0;
 
